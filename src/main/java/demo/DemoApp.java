@@ -14,9 +14,14 @@ public class DemoApp {
         SessionFactory sessionFactory = new SessionFactoryImpl(initializeDataSource());
         Session session = sessionFactory.openSession();
 
-        Person person = session.find(Person.class, 5L);
-        System.out.println(person);
+//        Person person = session.find(Person.class, 3L);
+//        System.out.println(person);
+//
+//        person.getNotes().forEach(System.out::println);
 
+//        Person person2 = session.find(Person.class, 5L);
+//        System.out.println(person2);
+//        session.close();
         Note note = session.find(Note.class, 7L);
         System.out.println(note);
 
